@@ -54,7 +54,7 @@ const topNav = () => {
     
   });
   
-  // add all items to the nav  
+/** add all items to the nav */  
 lpNavigation.innerHTML = navBehavior;
   
 };
