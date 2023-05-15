@@ -45,7 +45,7 @@ const lpNavigation = document.getElementById('navbar_list');
 const topNav = () => {
   
   let navBehavior = '';
-  sections.forEach(section => {
+  lpSections.forEach(section => {
     
     const sectionID = section.id;
     const sectionDataSet = section.dataset.nav;
@@ -54,7 +54,11 @@ const topNav = () => {
     
   });
     
+lpNavigation.innerHTML = navUI;
+  
+};
 
+topNav();
 
 
 
