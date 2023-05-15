@@ -23,10 +23,10 @@
  * 
 */
 
-// Global Sections variable
+/** Global Sections variable */
 const lpSections = document.querySelectorAll('section');
 
-// Global Navigation variable
+/** Global Navigation variable */
 const lpNavigation = document.getElementById('navbar__list');
 
 /**
