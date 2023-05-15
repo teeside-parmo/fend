@@ -42,7 +42,18 @@ const lpNavigation = document.getElementById('navbar_list');
  * 
 */
 
-
+const topNav = () => {
+  
+  let navBehavior = '';
+  sections.forEach(section => {
+    
+    const sectionID = section.id;
+    const sectionDataSet = section.dataset.nav;
+    
+    topNav += '<li><a class="menu_link" href="#${sectionID}">${sectionDataSet}</a></li>'
+    
+  });
+    
 
 
 
