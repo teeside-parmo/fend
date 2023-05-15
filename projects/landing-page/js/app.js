@@ -50,7 +50,7 @@ const topNav = () => {
     const sectionID = section.id;
     const sectionDataSet = section.dataset.nav;
     
-    navBehavior += '<li><a class="menu__link" href="#${sectionID}">${sectionDataSet}</a></li>';
+    navBehavior += `<li><a class="menu__link" href="#${sectionID}">${sectionDataSet}</a></li>`;
     
   });
   
