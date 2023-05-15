@@ -23,7 +23,10 @@
  * 
 */
 
+// Global Sections variable
 const lpSections = querySelectorAll('section');
+
+// Global Navigation variable
 const lpNavigation = document.getElementById('navbar_list');
 
 /**
