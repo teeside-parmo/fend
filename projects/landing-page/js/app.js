@@ -42,10 +42,10 @@ const lpNavigation = document.getElementById('navbar__list');
  * 
 */
 
-const topNav = function() {
+const topNav = () => {
   
   let navBehavior = '';
-  lpSections.forEach(function section {
+  lpSections.forEach(section => {
     
     const sectionID = section.id;
     const sectionDataSet = section.dataset.nav;
