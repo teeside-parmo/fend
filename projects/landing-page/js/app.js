@@ -27,7 +27,7 @@
 const lpSections = document.querySelectorAll('section');
 
 // Global Navigation variable
-const lpNavigation = document.getElementById('navbar_list');
+const lpNavigation = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
