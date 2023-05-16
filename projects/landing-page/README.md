@@ -18,6 +18,7 @@ This project can be used as an example to utlize Javascript to dynamically modif
 ## Dependencies
 
 - [Udacity](https://www.udacity.com/)
+- [MDN](https://developer.mozilla.org/en-US/)
 
 ## Licence
 
