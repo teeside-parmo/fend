@@ -29,10 +29,6 @@ const lpSections = document.querySelectorAll('section');
 /** Global Navigation Variable */
 const lpNavigation = document.getElementById('navbar__list');
 
-/** Global Menu Variable */
-const navMenu = document.querySelector('.navbar__menu');
-
-
 /**
  * End Global Variables
  * Start Helper Functions
@@ -59,7 +55,10 @@ const topNav = () => {
     
   });
   
-  /** Adding Hamburger Menu to Mobile Responsive Rules*/
+  /** 
+  @description Adding Hamburger Menu to Mobile Responsive Rules
+  @param {string} Hamb
+  */
   const hamburgerMenu = document.createElement('div');
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
@@ -72,7 +71,7 @@ lpNavigation.innerHTML = navBehavior;
 
 topNav();
 
-/** Click Event on Hamburger Menu */  
+/** Click Event on Hamburger Menu */ 
 const mobileBurgerMenu = document.querySelector('.hamburger-menu');
 
 mobileBurgerMenu.addEventListener('click', mobileMenu);
