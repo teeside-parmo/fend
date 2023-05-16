@@ -60,7 +60,6 @@ const topNav = () => {
   @param {string} Hamb
   */
   const hamburgerMenu = document.createElement('div');
-  const navMenu = document.getElementById('navbar__menu');
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
