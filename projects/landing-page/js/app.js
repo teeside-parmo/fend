@@ -29,9 +29,6 @@ const lpSections = document.querySelectorAll('section');
 /** Global Navigation List Variable */
 const lpNavigation = document.getElementById('navbar__list');
 
-/** Global Navigation Menu Variable */
-const navMenu = document.getElementById('navbar__menu');
-
 /**
  * End Global Variables
  * Start Helper Functions
@@ -63,6 +60,8 @@ const topNav = () => {
   @param {string} Hamb
   */
   const hamburgerMenu = document.createElement('div');
+  const navMenu = document.getElementById('navbar__menu');
+  
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
   navMenu.appendChild(hamburgerMenu);
