@@ -64,13 +64,26 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.navbar__menu {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
     text-align: right;
 }
 
-.navbar__menu li {
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.navbar__item {
     display: inline-block;
 }
 
@@ -100,12 +113,6 @@ section {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #fff;
-}
-
-.navbar__menu {
-   display: flex;
-   justify-content: right;
-   align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
