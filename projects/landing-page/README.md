@@ -2,12 +2,18 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Project Description](#project-description)
+* [How to Use This Project](#how-to-use-this-project)
+* [Licence](#licence)
 
-## Instructions
+## Project Description
 
 The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## How To Use This Project
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This project can be used as an example to utlize Javascript to dynamically modify static content on a landing page, specifically on how to add a responsive and user friendly navigation menu.
+
+## Licence
+
+No licence necessary. 
