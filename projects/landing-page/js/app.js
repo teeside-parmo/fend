@@ -72,8 +72,7 @@ lpNavigation.innerHTML = navBehavior;
 
 topNav();
 
-/** Add Click Event on Hamburger Menu */  
-
+/** Click Event on Hamburger Menu */  
 const mobileBurgerMenu = document.querySelector('.hamburger-menu');
 
 mobileBurgerMenu.addEventListener('click', mobileMenu);
@@ -81,6 +80,16 @@ mobileBurgerMenu.addEventListener('click', mobileMenu);
 function mobileMenu() {
     mobileBurgerMenu.classList.toggle('active');
     lpNavigation.classList.toggle('active');
+}
+
+/** Close Click Event on Hamburger Menu  */ 
+const menuLink = document.querySelectorAll('.menu__link');
+
+menuLink.forEach(n => n.addEventListener('click', closeMenu));
+
+function closeMenu() {
+    mobileBurgerMenu.classList.remove('active');
+    lpNavigation.classList.remove('active');
 }
 
 
