@@ -26,8 +26,11 @@
 /** Global Sections Variable */
 const lpSections = document.querySelectorAll('section');
 
-/** Global Navigation Variable */
+/** Global Navigation List Variable */
 const lpNavigation = document.getElementById('navbar__list');
+
+/** Global Navigation Menu Variable */
+const navMenu = document.getElementById('navbar__menu');
 
 /**
  * End Global Variables
