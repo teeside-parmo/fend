@@ -88,6 +88,26 @@ section {
     transition: ease 0.3s all;
 }
 
+.navbar__menu {
+   display: flex;
+   justify-items: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+}
+
 /* Header Styles */
 .page__header {
     background: #000;
