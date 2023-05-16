@@ -96,7 +96,7 @@ section {
     transition: ease 0.3s all;
 }
 
-.hamburger {
+.hamburger-menu {
     display: none;
 }
 
@@ -131,20 +131,20 @@ section {
    margin: 2.5rem 0;
 }
 	
-.hamburger {
+.hamburger-menu {
    display: block;
    cursor: pointer;
 }
 	
-.hamburger.active .bar:nth-child(2) {
+.hamburger-menu.active .bar:nth-child(2) {
    opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hamburger-menu.active .bar:nth-child(1) {
    transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3) {
+.hamburger-menu.active .bar:nth-child(3) {
    transform: translateY(-8px) rotate(-45deg);
 }
 }
