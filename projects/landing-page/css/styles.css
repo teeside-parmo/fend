@@ -70,17 +70,12 @@ section {
    align-items: center;
 }
 
-.navbar__menu ul {
-    padding-left: 0;
-    margin: 0;
-    text-align: right;
-}
-
-.navbar__list {
+#navbar__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    list-style: none;
 }
 
 .navbar__item {
@@ -116,7 +111,7 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-.navbar__list {
+#navbar__list {
    position: fixed;
    left: -100%;
    top: 5rem;
