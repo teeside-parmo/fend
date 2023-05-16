@@ -32,8 +32,6 @@ const lpNavigation = document.getElementById('navbar__list');
 /** Global Menu Variable */
 const navMenu = document.querySelector('.navbar__menu');
 
-/** Global Hamburger Menu Variable */
-const mobileBurgerMenu = document.querySelector('.hamburger-menu');
 
 /**
  * End Global Variables
@@ -75,6 +73,8 @@ lpNavigation.innerHTML = navBehavior;
 topNav();
 
 /** Add Click Event on Hamburger Menu */  
+
+const mobileBurgerMenu = document.querySelector('.hamburger-menu');
 
 mobileBurgerMenu.addEventListener('click', mobileMenu);
 
