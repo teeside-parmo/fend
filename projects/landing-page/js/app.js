@@ -80,7 +80,7 @@ mobileBurgerMenu.addEventListener('click', mobileMenu);
 
 function mobileMenu() {
     mobileBurgerMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    lpNavigation.classList.toggle('active');
 }
 
 
