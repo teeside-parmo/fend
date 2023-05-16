@@ -8,7 +8,7 @@
 
 ## Project Description
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The aim of this project was to convert a static Landing page to an interactive one, utlizing Javascript, CSS and HTML. 
 
 ## How To Use This Project
 
