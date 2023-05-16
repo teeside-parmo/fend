@@ -76,7 +76,7 @@ topNav();
 
 /** Add Click Event on Hamburger Menu */  
 
-hamburger.addEventListener('click', mobileMenu);
+mobileBurgerMenu.addEventListener('click', mobileMenu);
 
 function mobileMenu() {
     mobileBurgerMenu.classList.toggle('active');
