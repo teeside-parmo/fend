@@ -60,7 +60,7 @@ const topNav = () => {
   
   const hamburgerMenu = document.createElement('div');
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
-  hamburgerMenu.class = 'hamburger';
+  hamburgerMenu.classList.add('hamburger');
   navMenu.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
