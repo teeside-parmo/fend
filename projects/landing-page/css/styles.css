@@ -116,7 +116,10 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-.navbar__menu {
+.navbar__list {
+   position: fixed;
+   left: -100%;
+   top: 5rem;
    flex-direction: column;
    background-color: #000;
    width: 100%;
