@@ -30,7 +30,7 @@ const lpSections = document.querySelectorAll('section');
 const lpNavigation = document.getElementById('navbar__list');
 
 /** Global Menu Variable */
-const navMenu = document.querySelector('navbar__menu');
+const navMenu = document.getElementById('navbar__menu');
 
 /**
  * End Global Variables
@@ -58,7 +58,9 @@ const topNav = () => {
     
   });
   
-  const hamburgerMenu = document.createElement('<div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>');
+  const hamburgerMenu = document.createElement('div');
+  div.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
+  div.class = 'hamburger';
   navMenu.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
