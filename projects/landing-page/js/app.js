@@ -29,6 +29,9 @@ const lpSections = document.querySelectorAll('section');
 /** Global Navigation Variable */
 const lpNavigation = document.getElementById('navbar__list');
 
+/** Global Menu Variable */
+const navMenu = document.querySelector('navbar__menu');
+
 /**
  * End Global Variables
  * Start Helper Functions
@@ -51,9 +54,12 @@ const topNav = () => {
     const sectionID = section.id;
     const sectionDataSet = section.dataset.nav;
     
-    navBehavior += `<li><a class="menu__link" href="#${sectionID}">${sectionDataSet}</a></li><div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>`;
+    navBehavior += `<li><a class="menu__link" href="#${sectionID}">${sectionDataSet}</a></li>`;
     
   });
+  
+  const hamburgerMenu = document.createElement('<div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>');
+  navMenu.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
 lpNavigation.innerHTML = navBehavior;
