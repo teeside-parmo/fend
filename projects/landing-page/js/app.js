@@ -64,7 +64,7 @@ const topNav = () => {
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
-  navMenu.appendChild(hamburgerMenu);
+  lpNavigation.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
 lpNavigation.innerHTML = navBehavior;
