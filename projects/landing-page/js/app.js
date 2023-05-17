@@ -30,7 +30,7 @@ const lpSections = document.querySelectorAll('section');
 const lpNavigation = document.getElementById('navbar__list');
 
 /** Global Navigation List Variable */
-const navBarMenu = document.getElementById('navbar__menu');
+const navBarMenu = document.querySelector('.navbar__menu');
 
 /**
  * End Global Variables
