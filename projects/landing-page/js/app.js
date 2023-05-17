@@ -74,6 +74,27 @@ lpNavigation.innerHTML = navBehavior;
 
 topNav();
 
+/** Click Event on Hamburger Menu */
+const mobileBurgerMenu = document.querySelector('.hamburger-menu');
+const navBarList = document.getElementById('navbar__list');
+
+mobileBurgerMenu.addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+    mobileBurgerMenu.classList.toggle('active');
+    navBarList.classList.toggle('active');
+}
+
+/** Close Click Event on Hamburger Menu  */
+const menuLink = document.querySelectorAll('.menu__link');
+
+menuLink.forEach(n => n.addEventListener('click', closeMenu));
+
+function closeMenu() {
+    mobileBurgerMenu.classList.remove('active');
+    navBarList.classList.remove('active');
+};
+
 
 // Add class 'active' to section when near top of viewport
 
