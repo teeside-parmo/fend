@@ -96,17 +96,17 @@ function closeMenu() {
 };
 
 /** Scroll to Top Button  */
-const btn = $('#back-to-top');
+const scrollBtn = document.getElementById('back-to-top');
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+    scrollBtn.addClass('show');
   } else {
-    btn.removeClass('show');
+    scrollBtn.removeClass('show');
   }
 });
 
-btn.on('click', function(e) {
+scrollBtn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
