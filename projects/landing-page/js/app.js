@@ -58,10 +58,7 @@ const topNav = () => {
     
   });
   
-  /** 
-  @description Adding Hamburger Menu to Mobile Responsive Rules
-  @param {string} Hamb
-  */
+  //Adding Hamburger Menu to Mobile Responsive Rules
   const hamburgerMenu = document.createElement('div');
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
