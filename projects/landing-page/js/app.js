@@ -91,7 +91,7 @@ menuLink.forEach(n => n.addEventListener('click', closeMenu));
 function closeMenu() {
     mobileBurgerMenu.classList.remove('active');
     navBarList.classList.remove('active');
-}
+};
 
 
 
