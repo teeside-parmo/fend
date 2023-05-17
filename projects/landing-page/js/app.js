@@ -29,6 +29,9 @@ const lpSections = document.querySelectorAll('section');
 /** Global Navigation List Variable */
 const lpNavigation = document.getElementById('navbar__list');
 
+/** Global Navigation List Variable */
+const navBarMenu = document.getElementById('navbar__menu');
+
 /**
  * End Global Variables
  * Start Helper Functions
@@ -63,10 +66,10 @@ const topNav = () => {
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
-  lpNavigation.appendChild(hamburgerMenu);
+  navBarMenu.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
-lpNavigation.innerHTML = navBehavior;
+navBarMenu.innerHTML = navBehavior;
   
 };
 
