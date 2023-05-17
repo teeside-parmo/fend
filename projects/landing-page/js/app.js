@@ -119,7 +119,7 @@ const addActiveClass = (conditional, section) => {
 
 // Activating active section
 const sectionActivate = () => {
-    sections.forEach(section => {
+    lpsections.forEach(section => {
         const sectionBalance = balance(section);
 
         inviewport = () => sectionBalance < 150 && sectionBalance >= -150;
