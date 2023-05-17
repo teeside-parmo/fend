@@ -96,7 +96,7 @@ function closeMenu() {
 };
 
 /** Scroll to Top Button  */
-const btn = $('#button');
+const btn = $('#btn-to-top');
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
