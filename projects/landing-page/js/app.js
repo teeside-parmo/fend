@@ -22,12 +22,14 @@
  * Define Global Variables
  * 
 */
-
 /** Global Sections Variable */
 const lpSections = document.querySelectorAll('section');
 
-/** Global Navigation List Variable */
+/** Global Navigation Variable */
 const lpNavigation = document.getElementById('navbar__list');
+
+/** Global Menu Variable */
+const navMenu = document.querySelector('.navbar__menu');
 
 /** Global Navigation List Variable */
 
@@ -49,6 +51,7 @@ const lpNavigation = document.getElementById('navbar__list');
 const topNav = () => {
   
   let navBehavior = '';
+  // loops over the sections
   lpSections.forEach(section => {
     
     const sectionID = section.id;
@@ -57,13 +60,12 @@ const topNav = () => {
     navBehavior += `<li class="menu__item"><a class="menu__link" href="#${sectionID}">${sectionDataSet}</a></li>`;
     
   });
-  
- /**Adding Hamburger Menu to Mobile Responsive Rules */
+ /** Adding Hamburger Menu to Mobile Responsive Rules */
   const hamburgerMenu = document.createElement('div');
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
-  lpNavigation.appendChild(hamburgerMenu);
+  navMenu.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
 lpNavigation.innerHTML = navBehavior;
