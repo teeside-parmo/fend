@@ -103,6 +103,20 @@ const balance = (section) => {
     return Math.floor(section.getBoundingClientRect().top);
 };
 
+// remove active class
+const removeActiveClass = (section) => {
+    section.classList.remove('your-active-class');
+    section.style.cssText = "background: white;";
+};
+
+// add active class
+const addActiveClass = (conditional, section) => {
+    if(conditional){
+        section.classList.add('your-active-class');
+        section.style.cssText = "background: yellow;";
+    };
+};
+
 
 // Scroll to anchor ID using scrollTO event
 
