@@ -117,9 +117,21 @@ const addActiveClass = (conditional, section) => {
     };
 };
 
+// Activating active section
+const sectionActivate = () => {
+    sections.forEach(section => {
+        const sectionBalance = balance(section);
+
+        inviewport = () => sectionBalance < 150 && sectionBalance >= -150;
+
+        removeActiveClass(section);
+        addActiveClass(inviewport(),section);
+    });
+};
+
+window.addEventListener('scroll' ,sectionActivation);
 
 // Scroll to anchor ID using scrollTO event
-
 
 /**
  * End Main Functions
