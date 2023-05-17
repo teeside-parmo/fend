@@ -95,24 +95,13 @@ function closeMenu() {
     navBarList.classList.remove('active');
 };
 
-/** Scroll to Top Button  */
-const scrollBtn = document.getElementById('back-to-top');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    scrollBtn.addClass('show');
-  } else {
-    scrollBtn.removeClass('show');
-  }
-});
-
-scrollBtn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
 
 // Add class 'active' to section when near top of viewport
+
+// obtaining the highest number that is not greater than a given value.
+const balance = (section) => {
+    return Math.floor(section.getBoundingClientRect().top);
+};
 
 
 // Scroll to anchor ID using scrollTO event
