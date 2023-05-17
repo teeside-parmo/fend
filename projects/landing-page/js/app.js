@@ -129,7 +129,7 @@ const sectionActivate = () => {
     });
 };
 
-window.addEventListener('scroll', sectionActivation);
+window.addEventListener('scroll', sectionActivate);
 
 // Scroll to anchor ID using scrollTO event
 
