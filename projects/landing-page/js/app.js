@@ -30,7 +30,7 @@ const lpSections = document.querySelectorAll('section');
 const lpNavigation = document.getElementById('navbar__list');
 
 /** Global Navigation List Variable */
-const navBarMenu = document.querySelector('.navbar__menu');
+
 
 /**
  * End Global Variables
@@ -66,10 +66,10 @@ const topNav = () => {
   
   hamburgerMenu.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
   hamburgerMenu.classList.add('hamburger-menu');
-  navBarMenu.appendChild(hamburgerMenu);
+  lpNavigation.appendChild(hamburgerMenu);
   
 /** Add All Items To The Navigation */  
-navBarMenu.innerHTML = navBehavior;
+lpNavigation.innerHTML = navBehavior;
   
 };
 
@@ -77,12 +77,13 @@ topNav();
 
 /** Click Event on Hamburger Menu */ 
 const mobileBurgerMenu = document.querySelector('.hamburger-menu');
+const navBarMenu = document.querySelector('.navbar__menu');
 
 mobileBurgerMenu.addEventListener('click', mobileMenu);
 
 function mobileMenu() {
     mobileBurgerMenu.classList.toggle('active');
-    lpNavigation.classList.toggle('active');
+    navBarMenu.classList.toggle('active');
 }
 
 /** Close Click Event on Hamburger Menu  */ 
@@ -92,7 +93,7 @@ menuLink.forEach(n => n.addEventListener('click', closeMenu));
 
 function closeMenu() {
     mobileBurgerMenu.classList.remove('active');
-    lpNavigation.classList.remove('active');
+    navBarMenu.classList.remove('active');
 }
 
 
