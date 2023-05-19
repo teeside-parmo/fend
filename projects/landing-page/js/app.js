@@ -144,10 +144,10 @@ const sectionHeader = document.getElementsByClassName("section-header"),
             for (let j = 0; j < sectionContents.length; j++) {
                 if (i == j) {
                     icons[j].innerHTML = sectionContents[j].getBoundingClientRect().height === 0 ? "+" : "-";
-                    sectionContents[j].classList.toggle("content-transition");
+                    sectionContents[j].classList.remove("content-transition");
                 } else {
                     icons[j].innerHTML = "-";
-                    sectionContents[j].classList.remove("content-transition");
+                    sectionContents[j].classList.toggle("content-transition");
                 }
             }
 
