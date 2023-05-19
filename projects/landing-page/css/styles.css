@@ -72,12 +72,15 @@ section {
   cursor: pointer;
 }
 
-.title {
+.section-title {
   flex:1;
 }
 
 .icon {
   width:20px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
 } 
 
  .section-content {
