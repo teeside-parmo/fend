@@ -134,8 +134,8 @@ window.addEventListener('scroll', sectionActivate);
 // Section Acccordian Variables
 
 const sectionHeader = document.getElementsByClassName("section-header"),
-const sectionContents = document.getElementsByClassName("section-content"),
-const icons = document.getElementsByClassName("icon");
+      sectionContents = document.getElementsByClassName("section-content"),
+      icons = document.getElementsByClassName("icon");
 
 // Section Acccordian Function
  for (let i = 0; i < sectionHeader.length; i++) {
