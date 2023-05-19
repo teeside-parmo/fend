@@ -103,7 +103,7 @@ const balance = (section) => {
     return Math.floor(section.getBoundingClientRect().top);
 };
 
-// remove active class
+// remove active class to section and navigation
 const removeActiveClass = (section) => {
     section.classList.remove('your-active-class');
     section.style.cssText = "background:linear-gradient(0deg, rgba(139,0,139,1) 0%, rgba(75,0,130,1) 100%);";
@@ -111,7 +111,7 @@ const removeActiveClass = (section) => {
     lpNavigation.childNodes[sectionNumber].style.cssText = "background: #000;";
 };
 
-// add active class
+// add active class to section and navigation
 const addActiveClass = (conditional, section) => {
     if(conditional){
         section.classList.add('your-active-class');
