@@ -113,7 +113,7 @@ const removeActiveClass = (section) => {
 const addActiveClass = (conditional, section) => {
     if(conditional){
         section.classList.add('your-active-class');
-        section.style.cssText = "background: white; color: #000";
+        section.style.cssText = "background: #fff;color#000";
     };
 };
 
