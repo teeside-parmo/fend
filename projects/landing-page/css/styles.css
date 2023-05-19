@@ -58,12 +58,6 @@ main {
 section {
     position: relative;
     min-height: 80vh;
-    border:1px solid #008080;
-    border-bottom:none;
-}
-
- .section:last-child {
-  border-bottom:1px solid #808080;
 }
 
 .section-header {
