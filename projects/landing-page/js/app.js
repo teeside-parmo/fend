@@ -107,6 +107,8 @@ const balance = (section) => {
 const removeActiveClass = (section) => {
     section.classList.remove('your-active-class');
     section.style.cssText = "background:linear-gradient(0deg, rgba(139,0,139,1) 0%, rgba(75,0,130,1) 100%);";
+    sectionNumber = section.id.slice(7,8) -1;
+    lpNavigation.childNodes[sectionNumber].style.cssText = "background: #000";
 };
 
 // add active class
@@ -114,6 +116,8 @@ const addActiveClass = (conditional, section) => {
     if(conditional){
         section.classList.add('your-active-class');
         section.style.cssText = "background: #fff;color: #000";
+        sectionNumber = section.id.slice(7,8) -1;
+        lpNavigation.childNodes[sectionNumber].style.cssText = "background: #fff";
     };
 };
 
