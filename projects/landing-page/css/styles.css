@@ -76,15 +76,23 @@ section {
   flex:1;
 }
 
+.section-content {
+  max-height: 0;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+  padding:0;
+}
+
+.content-transition {
+  max-height: 1500px;
+  transition: max-height 3s ease-in;
+}
+
 .icon {
   width:20px;
   display: flex;
   align-items: center;
   font-size: 30px;
-} 
-
- .section-content {
-  padding:10px;
 } 
 
 /* ---- Module Rules ---- */
