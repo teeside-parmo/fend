@@ -164,7 +164,7 @@ const sectionHeader = document.getElementsByClassName("section-header"),
  const scroll = () => {
 
     const sectionAnchor = document.querySelectorAll('.navbar__menu a');
-    links.forEach(link => {
+    links.forEach(sectionAnchor => {
         sectionAnchor.addEventListener('click', () => {
             for(i = 0 ; i<lpSections ; i++){
                 lpSections[i].addEventListener('click',sectionScroll(link));
