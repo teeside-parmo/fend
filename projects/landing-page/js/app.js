@@ -131,6 +131,29 @@ const sectionActivate = () => {
 
 window.addEventListener('scroll', sectionActivate);
 
+// Section Acccordian Variables
+
+const sectionHeader = document.getElementsByClassName("section-header"),
+const sectionContents = document.getElementsByClassName("section-content"),
+const icons = document.getElementsByClassName("icon");
+
+// Section Acccordian Function
+ for (let i = 0; i < sectionHeader.length; i++) {
+        sectionHeader[i].addEventListener("click", () => {
+
+            for (let j = 0; j < sectionContents.length; j++) {
+                if (i == j) {
+                    icons[j].innerHTML = sectionContents[j].getBoundingClientRect().height === 0 ? "-" : "+";
+                    sectionContents[j].classList.toggle("content-transition");
+                } else {
+                    icons[j].innerHTML = "+";
+                    sectionContents[j].classList.remove("content-transition");
+                }
+            }
+
+        });
+    }
+
 // Scroll to anchor ID using scrollTO event
 
 /**
