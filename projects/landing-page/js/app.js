@@ -113,7 +113,7 @@ const removeActiveClass = (section) => {
 const addActiveClass = (conditional, section) => {
     if(conditional){
         section.classList.add('your-active-class');
-        section.style.cssText = "background: linear-gradient(0deg, rgba(0,132,0,0.5) 0%, rgba(75,0,130) 100%);";
+        section.style.cssText = "background: linear-gradient(0deg, rgba(0,132,0,0.5) 0%, rgba(75,0,130,1) 100%);";
     };
 };
 
