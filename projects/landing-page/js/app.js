@@ -126,7 +126,7 @@ const sectionActivate = () => {
     lpSections.forEach(section => {
         const sectionBalance = balance(section);
 
-        inviewport = () => sectionBalance < 250 && sectionBalance >= -250;
+        inviewport = () => sectionBalance < 80 && sectionBalance >= -80;
 
         removeActiveClass(section);
         addActiveClass(inviewport(),section);
