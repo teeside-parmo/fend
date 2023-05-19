@@ -170,6 +170,7 @@ section {
    margin: 2.5rem 0;
 }
 	
+/* Mobile Hamburger Menu */
 .hamburger-menu {
    display: block;
    cursor: pointer;
@@ -221,12 +222,6 @@ section {
         max-width: 50em;
         padding: 4em;
     }
-}
-
-section:nth-of-type(even) .landing__container {
-    margin-right: 0;
-    margin-left: auto;
-    text-align: right; 
 }
 
 /* Background Circles */
