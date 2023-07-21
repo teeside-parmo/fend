@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interpret Natural Human Speech</title>
         <link rel="stylesheet" href="/styles/resets.css">
         <link rel="stylesheet" href="/styles/base.css">
@@ -13,33 +14,31 @@
     <body>
 
         <header>
-            <div class="">
+            <div class="logo">
                 Logo
-            </div>
-            <div class="">
-                navigation
             </div>
         </header>
 
-        <main>
+        <body>
             <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="Client.sitUp()" placeholder="Enter text">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <form id="myForm" method="post" onsubmit="return Client.handleSubmit(event)">
+                    <label for="URI">Enter an Article URL:</label>
+                    <input type="text" id="URI" name="URI" />
+                    <button type="submit" value="Analyze">Analyze</button>
                 </form>
             </section>
 
             <section>
-                <div class="range">
-                    <p class="label">Range:</p>
-                    <div id="result_range"></div>
+                <div class="polarity">
+                    <p class="label">Polarity:</p>
+                    <div id="result_polarity"></div>
                 </div>
-                <div class="influence">
-                    <p class="label">Influence:</p>
-                    <div id="result_influence"></div>
+                <div class="subjectivity">
+                    <p class="label">Subjectivity:</p>
+                    <div id="result_subjectivity"></div>
                 </div>
             </section>
-        </main>
+        </body>
 
         <footer>
             <p>This is a footer</p>

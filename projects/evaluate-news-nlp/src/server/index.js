@@ -1,54 +1,41 @@
-const dotenv = require('dotenv');
-//configure env files
-dotenv.config();
-
-var path = require('path')
-const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
-
+const express = require("express")
+const port = 8082
+const cors = require("cors")
 const app = express()
-
-// Cors for cross origin allowance
-const cors = require('cors');
-app.use(cors());
-
+app.use(cors())
+const dotenv = require("dotenv")
+const { analyze } = require("./analyse")
+//middlewares
+// app.use(express.urlencoded({extended: true}));
 app.use(express.static('dist'))
+app.use(express.json())
+dotenv.config()
 
-console.log(__dirname)
+const MEAN_CLOUD_API_KEY = process.env.API_KEY
 
 app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html')
-    res.sendFile('dist/index.html')
+    res.render("index.html")
 })
 
-// Require the Aylien npm package
-var aylien = require("aylien_textapi");
+app.post("/", async (req, res) => {
+    // 1. GET the url from the request body
+    const url = req.body.URI
+    // 2. Fetch Data from API by sending the url and the key
+    const Analyze = await analyze(url, MEAN_CLOUD_API_KEY)
+    const {code, msg, sample} = Analyze
+    //send errors if result was wrong
+    if (code == 212) {
+        return res.send({ msg: msg , code: code})
+    }
+    else if (code == 100) {
+        return res.send({ msg: msg, code: code })
+    }
 
-app.get('/test', function (req, res) {
-    const formdata = new FormData();
-formdata.append("key", process.env.API_KEY);
-formdata.append("txt", "This is a test, I repeat a test.");
-formdata.append("lang", "en");  // 2-letter code, like en es fr ...
+    return res.send({sample: sample, code: code})
 
-const requestOptions = {
-  method: 'POST',
-  body: formdata,
-  redirect: 'follow'
-};
-
-fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
-  .then(response => (response.json()))
-  .then(data => {
-    // Process the data received from the API
-    res.send(data); // Send the data as the response
-  })
-  .catch(error => {
-    console.log('Error:', error);
-    res.status(500).send('An error occurred'); // Send an error response if something goes wrong
-  });
 })
 
-// designates what port the app will listen to for incoming requests
-app.listen(8082, function () {
-  console.log('Example app listening on port 8082!')
-})
+
+app.listen(port,
+    () => console.log("server is now listening on port 8082")
+)

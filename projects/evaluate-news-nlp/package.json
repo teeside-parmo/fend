@@ -21,6 +21,8 @@
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@webpack-cli/serve": "^2.0.5",
+    "aylien_textapi": "^0.7.0",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "cors": "^2.8.5",
@@ -32,7 +34,6 @@
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "webpack-dev-server": "^4.15.1",
-    "aylien_textapi": "^0.7.0",
     "workbox-webpack-plugin": "^7.0.0"
   }
 }
