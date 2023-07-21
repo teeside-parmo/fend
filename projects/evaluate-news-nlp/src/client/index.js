@@ -1,6 +1,7 @@
-import { handleSubmit } from "./js/handleSubmit"
+import { checkForName } from './js/nameChecker'
+import { handleSubmit, handleFetch } from './js/formHandler'
+import { onBlur } from './js/nameChecker'
 
-// sass files
 import './styles/resets.scss'
 import './styles/base.scss'
 import './styles/footer.scss'
@@ -8,5 +9,8 @@ import './styles/form.scss'
 import './styles/header.scss'
 
 export {
-    handleSubmit
-   }
+    checkForName,
+    handleSubmit,
+    handleFetch,
+    onBlur
+}
