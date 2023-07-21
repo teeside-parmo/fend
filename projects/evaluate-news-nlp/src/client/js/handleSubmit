@@ -54,11 +54,8 @@ const display_results = data => {
     hide_error()
     show_results(true)
 
-    document.getElementById("agreement").innerHTML = `Agreement: ${data.sample.agreement}`;
+    document.getElementById("polarity").innerHTML = `Polarity: ${data.sample.polarity}`;
     document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.sample.subjectivity}`;
-    document.getElementById("confidence").innerHTML = `Confidence: ${data.sample.confidence}`;
-    document.getElementById("irony").innerHTML = `Irony: ${data.sample.irony}`;
-    document.getElementById("score_tag").innerHTML = `Score Tag: ${data.sample.score_tag}`;
 }
 
 
