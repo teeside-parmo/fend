@@ -1,43 +1,97 @@
+Skip to content
+menoo20
+/
+nlp-project---udacity---evaluate-news-article
+
+Type / to search
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Pane width
+Use a value between 10% and 63%
+
+13
+Change width
+Code
+Go to file
+t
+public content loaded
+dist
+src
+client
+__test__
+views
+js
+checkURL.js
+handleSubmit.js
+public
+style.scss
+index.html
+index.js
+server
+analyse.js
+index.js
+.babelrc
+.env
+.gitignore
+package-lock.json
+package.json
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
+Documentation • Share feedback
+Breadcrumbsnlp-project---udacity---evaluate-news-article/src/client/views
+/index.html
+Latest commit
+menoo20
+menoo20
+added webpack.common functionality
+c96b5b6
+ · 
+last month
+History
+File metadata and controls
+
+Code
+
+Blame
+33 lines (29 loc) · 923 Bytes
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Interpret Natural Human Speech</title>
-    </head>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-webpack</title>
+</head>
 
-        <header>
-            <div class="logo">
-                Logo
-            </div>
-        </header>
+<body>
+    <div class="container">
+        <form id="myForm" method="post" onsubmit="return Client.handleSubmit(event)">
+            <label for="URI">Enter an Article URL:</label>
+            <input type="text" id="URI" name="URI" />
+            <button type="submit" value="Analyze">Analyze</button>
+        </form>
+    </div>
+    <div id="error" style="display: none;"></div>
+    <div id="results">
+        <h2>Results:</h2>
+        <div id="loader" style="display: none;"></div>
 
-        <body>
-            <section>
-                <form id="myForm" method="post" onsubmit="return Client.handleSubmit(event)">
-                    <label for="URI">Enter an Article URL:</label>
-                    <input type="text" id="URI" name="URI" />
-                    <button type="submit" value="Analyze">Analyze</button>
-                </form>
-            </section>
+        <ul id="resultsList">
+            <li id="agreement"></li>
+            <li id="subjectivity"></li>
+            <li id="confidence"></li>
+            <li id="irony"></li>
+            <li id="score_tag"></li>
+        </ul>
+    </div>
+</body>
 
-            <section>
-                <div class="polarity">
-                    <p class="label">Polarity:</p>
-                    <div id="result_polarity"></div>
-                </div>
-                <div class="subjectivity">
-                    <p class="label">Subjectivity:</p>
-                    <div id="result_subjectivity"></div>
-                </div>
-            </section>
-        </body>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-
-    </body>
 </html>
+nlp-project---udacity---evaluate-news-article/src/client/views/index.html at master · menoo20/nlp-project---udacity---evaluate-news-article
