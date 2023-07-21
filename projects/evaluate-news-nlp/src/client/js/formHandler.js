@@ -15,7 +15,7 @@ function handleSubmit(event) {
 }
     
 function handleFetch(){
-    fetch('https://localhost:8080/test')
+    fetch('http://localhost:8082/test')
         .then(res => res.json())
         .then(function(res) {
             document.getElementById('result_range').innerHTML = res.score_tag;
