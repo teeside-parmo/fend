@@ -10,3 +10,29 @@ input {
     line-height: 16px;
     margin: 10px 0;
 }
+
+.subjectivity, .polarity {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#result_polarity, #result_subjectivity {
+    background: tomato;
+  margin: 5px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.label {
+    background: green;
+  padding: 5px;
+  margin: 5px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
