@@ -4,7 +4,7 @@ const cors = require("cors")
 const app = express()
 app.use(cors())
 const dotenv = require("dotenv")
-const { analyze } = require("./analyse")
+const { analyze } = require("./analyze")
 //middlewares
 // app.use(express.urlencoded({extended: true}));
 app.use(express.static('dist'))
