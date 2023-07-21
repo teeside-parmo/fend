@@ -21,10 +21,8 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
-// designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
-})
+// Require the Aylien npm package
+var aylien = require("aylien_textapi");
 
 app.get('/test', function (req, res) {
     const formdata = new FormData();
@@ -48,4 +46,9 @@ fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
     console.log('Error:', error);
     res.status(500).send('An error occurred'); // Send an error response if something goes wrong
   });
+})
+
+// designates what port the app will listen to for incoming requests
+app.listen(8082, function () {
+  console.log('Example app listening on port 8082!')
 })
