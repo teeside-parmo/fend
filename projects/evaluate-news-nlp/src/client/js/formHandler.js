@@ -5,8 +5,8 @@ function handleSubmit(event) {
     let formText = document.getElementById('name').value.trim()
     if (Client.checkForName(formText)) {
         // refresh the result section when input is clear
-        document.getElementById('result_polarity').innerHTML = "";
-        document.getElementById('result_subjectivity').innerHTML = "";
+        document.getElementById('result_range').innerHTML = "";
+        document.getElementById('result_influence').innerHTML = "";
         alert("Error - the text field cannot be empty")
     } else {
         console.log("::: Form Submitted :::")
@@ -15,13 +15,13 @@ function handleSubmit(event) {
 }
     
 function handleFetch(){
-    fetch('https://localhost:8081/test')
+    fetch('https://localhost:8080/test')
         .then(res => res.json())
         .then(function(res) {
-            document.getElementById('result_polarity').innerHTML = res.score_tag;
-            document.getElementById('result_subjectivity').innerHTML = res.subjectivity;
+            document.getElementById('result_range').innerHTML = res.score_tag;
+            document.getElementById('result_influence').innerHTML = res.influence;
             console.log("::: Received score_tag :::", res.score_tag);
-            console.log("::: Received subjectivity :::", res.subjectivity);
+            console.log("::: Received influence :::", res.influence);
         })
 }
 

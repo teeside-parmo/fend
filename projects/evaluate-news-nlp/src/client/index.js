@@ -1,5 +1,5 @@
 import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
+import { handleSubmit, handleFetch } from './js/formHandler'
 import { sitUp } from './js/nameChecker'
 
 // sass files

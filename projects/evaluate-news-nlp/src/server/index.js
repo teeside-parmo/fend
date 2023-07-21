@@ -6,8 +6,11 @@ var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 
-
 const app = express()
+
+// Cors for cross origin allowance
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.static('dist'))
 
@@ -24,10 +27,25 @@ app.listen(8080, function () {
 })
 
 app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
-})
+    const formdata = new FormData();
+formdata.append("key", process.env.API_KEY);
+formdata.append("txt", "This is a test, I repeat a test.");
+formdata.append("lang", "en");  // 2-letter code, like en es fr ...
 
-// You could call it aylienapi, or anything else
-var textapi = new aylien({
-    application_key: process.env.API_KEY
- });
+const requestOptions = {
+  method: 'POST',
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
+  .then(response => (response.json()))
+  .then(data => {
+    // Process the data received from the API
+    res.send(data); // Send the data as the response
+  })
+  .catch(error => {
+    console.log('Error:', error);
+    res.status(500).send('An error occurred'); // Send an error response if something goes wrong
+  });
+})
