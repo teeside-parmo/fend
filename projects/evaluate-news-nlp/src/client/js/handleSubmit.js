@@ -58,7 +58,6 @@ const display_results = data => {
     document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.sample.subjectivity}`;
 }
 
-
 const loading = (bool) => {
     // loader
     const loader = document.getElementById('loader');
