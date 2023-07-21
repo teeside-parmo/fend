@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 )
 
-
 // handle the submit
 async function handleSubmit(e) {
     e.preventDefault();
@@ -30,7 +29,7 @@ async function handleSubmit(e) {
     }
     loading(true);
     const { data } = await axios.post(
-        'http://localhost:8000/',
+        'http://localhost:8082/',
         form,
         {
             headers: {

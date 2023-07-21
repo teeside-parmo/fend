@@ -1,7 +1,6 @@
 const meaningCloud = "https://api.meaningcloud.com/sentiment-2.1"
 const axios = require("axios")
 
-
 analyze = async (url, key) => {
     // the URL=`${BASE_API_URL}?key=${MEAN_CLOUD_API_KEY}&url=${req.body.url}&lang=en`
     analysis = await axios.get(`${meaningCloud}?key=${key}&url=${url}&lang=en`)
@@ -34,7 +33,6 @@ const successResponse = (data, code) =>{
             let sample = {
                 polarity: polarity,
                 subjectivity: subjectivity
-    
             }
             result = { sample, status: code }
             return result
