@@ -1,6 +1,9 @@
 const dotenv = require('dotenv');
 dotenv.config();
-console.log(process.env) // remove this after you've confirmed it is working
+console.log(`Your API key is ${process.env.API_KEY}`); // remove this after you've confirmed it is working
+var textapi = new aylien({
+  application_key: process.env.API_KEY
+});
 
 var path = require('path')
 const express = require('express')
