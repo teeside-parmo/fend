@@ -29,8 +29,8 @@ app.listen(8081, function () {
 app.get('/test', function (req, res) {
     const formdata = new FormData();
 formdata.append("key", process.env.API_KEY);
-formdata.append("txt", "@AmericanAir just landed - 3hours Late Flight - and now we need to wait TWENTY MORE MINUTES for a gate! I have patience but none for incompetence.");
-formdata.append("lang", "en");  // 2-letter code, like en es fr ...
+formdata.append("txt", "Example copy");
+formdata.append("lang", "en");  // 2-letter country code
 
 const requestOptions = {
   method: 'POST',
