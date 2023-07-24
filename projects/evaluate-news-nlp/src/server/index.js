@@ -1,6 +1,5 @@
 const dotenv = require('dotenv');
 dotenv.config();
-console.log(`Your API key is ${process.env.API_KEY}`) // remove this after you've confirmed it is working
 
 var path = require('path')
 const express = require('express')
