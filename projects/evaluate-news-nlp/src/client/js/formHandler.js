@@ -7,7 +7,7 @@ function handleSubmit(event) {
         // reset the result field when imput is empty
         document.getElementById('result_polarity').innerHTML = "";
         document.getElementById('result_subjectivity').innerHTML = "";
-        alert("The text field cannot be empty!")
+        alert("The URL field cannot be empty!")
     } else {    
     console.log("::: Form Submitted :::")
     handleFetch();

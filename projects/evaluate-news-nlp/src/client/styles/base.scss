@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font: $font-stack;
+    font-family: $font-stack;
 }
 
 main {
@@ -14,4 +14,24 @@ main {
 section {
     max-width: 600px;
     margin: 50px auto;
+}
+
+h1, h2, h3 {
+    font-family: $font-stack;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 500;
 }
