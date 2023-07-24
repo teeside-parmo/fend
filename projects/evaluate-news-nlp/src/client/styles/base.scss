@@ -1,8 +1,10 @@
+$font-stack: 'Poppins', sans-serif;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font: $font-stack;
 }
 
 main {
@@ -10,6 +12,6 @@ main {
 }
 
 section {
-    max-width: 800px;
+    max-width: 600px;
     margin: 50px auto;
 }

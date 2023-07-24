@@ -2,6 +2,7 @@ form {
     border: 1px solid #545454;
     border-radius: 3px;
     padding: 40px;
+    background: #ccc;
 }
 
 input {
@@ -9,6 +10,16 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+}
+
+#submit-button {
+  background: #710193;
+  color: #fff;
+  font-weight: 600;
+
+  &:hover {
+    background: #4c0121;
+  }
 }
 
 .subjectivity, .polarity {
@@ -27,7 +38,6 @@ input {
 }
 
 .label {
-    background: green;
   padding: 5px;
   margin: 5px;
   line-height: 50px;
