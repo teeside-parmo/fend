@@ -19,4 +19,14 @@ This project aims to give you the opportunity to put all of the skills you have 
 GEONAMES_USER=your Geonames username
 WEATHERBIT_KEY=your WeatherBit API key
 PIXABAY_KEY=your Pixabay API key
+
+## 4. User Interaction
+The user accesses the site and is presented with a simple form. The form has two input fields, one to enter City name and the other to capture the departure date. After the user enters required data and clicks submit, they receive an image of the city as well as the current plus how many days until their departure date. 
+
+## 5. Show content offline
+The application uses service workers to show the content when offline.
+
+## 6. Licence
+
+No licence necessary. 
 ```
