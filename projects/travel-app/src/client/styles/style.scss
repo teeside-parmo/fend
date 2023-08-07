@@ -121,19 +121,8 @@ body {
     }
   }
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #710193;
-    color: #fff;
-    width: 100%;
-    padding: 60px;
-    margin: 0 auto;
-  }
-  
-  /* Style for Placeholder Text*/
-  ::placeholder {
+   /* Style for Placeholder Text*/
+   ::placeholder {
     /* Firefox, Chrome, Opera */
     color: #ccc;
     font-family: "Poppins", sans-serif;
@@ -149,6 +138,17 @@ body {
     /* Microsoft Edge */
     color: #ccc;
     font-family: "Poppins", sans-serif;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #710193;
+    color: #fff;
+    width: 100%;
+    padding: 60px;
+    margin: 0 auto;
   }
   
   @media only screen and (max-width: 1000px) {
