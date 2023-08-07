@@ -133,6 +133,24 @@ body {
         padding-right: 1rem;
       }
     }
+    button {
+      margin-top: 1rem;
+      width: 8rem;
+      height: 3rem;
+      background: #333;
+      color: white;
+      font-size: 1.25rem;
+      font-family: "Poppins", sans-serif;
+      border: none;
+      box-shadow: 2px 4px 5px #444;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+      color: #333;
+      background: #fff;
+      transition: background-color 0.5s ease;
+      }
   }
 
    /* Style for Placeholder Text*/
