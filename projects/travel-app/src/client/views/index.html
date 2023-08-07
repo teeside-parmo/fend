@@ -24,8 +24,8 @@
     </div>
     <div id="entryHolder">
         <h2 class="title" id="title">Destination Details</h2>
-        <div class="refresh-link">
-            <a href="#">Refresh</a>
+        <div class="refresh-button">
+            <button id="refresh" type="refresh" role="button" onclick="reloadPage()">Refresh</button>
         </div>
     </div>
     <section class="footer">
@@ -37,7 +37,7 @@
     <script>
       // Check that service workers are supported
       if ("serviceWorker" in navigator) {
-        // Use the window load event to keep the page load performant
+        // Use the window load event to maintain the page load performance
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("/service-worker.js");
         });
