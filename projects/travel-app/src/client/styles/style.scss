@@ -80,6 +80,11 @@ body {
           box-shadow: 2px 4px 5px #444;
           border: 0;
           border-radius: 8px;
+          cursor: pointer;
+          button:hover {
+            background: #fff;
+            color: #710193;
+          }
         }
       }
     }
