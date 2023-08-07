@@ -7,6 +7,6 @@ import { weatherbitApi } from "./js/callWeatherbitApi";
 import "./styles/style.scss";
 
 // addEventListener for "click" on button "generate"
-document.getElementById("generate").addEventListener("click", formHandler);
+document.getElementById("submit").addEventListener("click", formHandler);
 
 export { formHandler, updateUi, geonamesApi, pixabayApi, weatherbitApi };
