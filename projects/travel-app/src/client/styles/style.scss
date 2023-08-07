@@ -81,9 +81,9 @@ body {
           border: 0;
           border-radius: 8px;
           cursor: pointer;
-          button:hover {
-            background: #fff;
-            color: #710193;
+          :hover {
+          color: #710193;
+          background: #fff;
           }
         }
       }
@@ -98,8 +98,12 @@ body {
     align-items: center;
     margin: 0 auto 60px;
     border: #ccc solid 2px;
+    border-radius: 30px;
     box-shadow: 2px 4px 5px #ccc;
     width: 80%;
+    h2 {
+      text-align: center;
+    }
     p {
       display: flex;
       flex-direction: row;
@@ -160,7 +164,7 @@ body {
     margin: 0 auto;
   }
   
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     body {
       #app {
         flex-direction: column;
@@ -170,15 +174,24 @@ body {
           justify-content: center;
           flex-direction: column;
           width: 100vw;
+          input {
+            width: 100%;
+          }
         }
-        .headline {
+        .main-headline {
           width: 100%;
+          padding: 0;
+          font-size: 4rem;
         }
         #icon {
           width: 2.5rem;
         }
         #content-text {
           padding-right: 0;
+        }
+      }
+      #entryHolder {
+        h2 { font-size: 2rem;
         }
       }
     }
