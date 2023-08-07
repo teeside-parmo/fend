@@ -174,9 +174,6 @@ body {
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          input {
-            width: 100%;
-          }
         }
         .main-headline {
           width: 100%;
@@ -194,5 +191,8 @@ body {
         h2 { font-size: 2rem;
         }
       }
+    }
+    input {
+      width: 100%;
     }
   }
