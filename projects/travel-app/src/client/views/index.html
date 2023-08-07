@@ -26,7 +26,7 @@
         <h2 class="title" id="title">Destination Details</h2>
         <div class="result-buttons">
             <button id="refresh" type="refresh" role="button" onclick="reloadPage()">Refresh</button>
-            <button id="print" type="print" role="button" onclick="printDiv('printMe')">Print Results</button>
+            <button id="print" type="print" role="button" onclick="printResults()">Print Results</button>
         </div>
     </div>
     <section class="footer">
@@ -55,12 +55,12 @@
 
 <script defer>
   // Function to print results
-  function printDiv(entryHolder){
-    var printContents = document.getElementById(entryHolder).innerHTML;
-    var originalContents = document.body.innerHTML;
-    document.body.innerHTML = printContents;
-    window.print();
-    document.body.innerHTML = originalContents;
+  function printResults() {
+      const printContents = document.getElementById('entryHolder').innerHTML;
+      const originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
   }
 </script>
   </body>
