@@ -25,7 +25,7 @@ body {
     width: 100%;
     padding: 10% 0;
     .main-headline {
-      color: #710193;
+      color: #006738;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -72,7 +72,7 @@ body {
           margin-top: 1rem;
           width: 8rem;
           height: 3rem;
-          background: #710193;
+          background: #006738;
           color: white;
           font-size: 1.25rem;
           font-family: "Poppins", sans-serif;
@@ -82,8 +82,9 @@ body {
           border-radius: 8px;
           cursor: pointer;
           &:hover {
-          color: #710193;
+          color: #006738;
           background: #fff;
+          transition: background-color 0.5s ease;
           }
         }
       }
@@ -121,7 +122,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
-      background: #710193;
+      background: #006738;
       color: #fff;
       padding-left: 20px;
       border-radius: 30px;
@@ -157,7 +158,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #710193;
+    background: #006738;
     color: #fff;
     max-width: 100%;
     padding: 60px;
