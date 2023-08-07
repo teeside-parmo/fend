@@ -5,7 +5,7 @@ let geoData = {};
 
 function formHandler() {
   // get form input
-  let cityName = document.getElementById("zip").value;
+  let cityName = document.getElementById("city").value;
   let departure = document.getElementById("date").value;
 
   //CREDIT for the countdown:
