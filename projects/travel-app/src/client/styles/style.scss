@@ -81,7 +81,7 @@ body {
           border: 0;
           border-radius: 8px;
           cursor: pointer;
-          :hover {
+          &:hover {
           color: #710193;
           background: #fff;
           }
@@ -173,7 +173,6 @@ body {
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          width: 100vw;
           input {
             width: 100%;
           }
