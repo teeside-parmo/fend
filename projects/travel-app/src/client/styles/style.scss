@@ -196,8 +196,6 @@ body {
       width: 100%;
     }
     #entryHolder {
-      align-items: center;
-      flex-direction: column;
       h3 {
         font-size: 1.2rem;
       }
@@ -206,6 +204,9 @@ body {
       }
       #content {
         border-radius: 30px 30px 0 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
         #content-text {
           padding: 5px;
           text-align: center;
