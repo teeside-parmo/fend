@@ -1,6 +1,6 @@
 /* Global Variables */
 const geoURL = "http://api.geonames.org/searchJSON?q=";
-const apiKey = "&maxRows=10&username=pduoebsi1";
+const apiKey = "&maxRows=10&username=twohig";
 let geoData = {};
 
 function formHandler() {

@@ -1,7 +1,7 @@
 let weatherbitApi = async (geoData) => {
     const lat = geoData.lat;
     const lng = geoData.lng;
-    const weatherbitApiKey = "9724fd8f861241848ed47ffc0ff7998c";
+    const weatherbitApiKey = "ee585a37a1084e9788b39fad8928eefd";
     const weatherbitApiReqURL = `https://api.weatherbit.io/v2.0/forecast/daily?lat=${lat}&lon=${lng}&key=${weatherbitApiKey}`;
     const res = await fetch(weatherbitApiReqURL);
     let result = {};
