@@ -2,7 +2,7 @@ body {
     background: #fffff8;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
-    max-width: 100vw;
+    max-width: 100%;
   }
   h1 {
     font-size: 5rem;
@@ -22,21 +22,18 @@ body {
     color: #000;
     justify-content: center;
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 10% 0;
     .main-headline {
       color: #710193;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 50vw;
-      height: 100vh;
+      padding-right: 5%;
     }
     .interaction {
-      height: 100vh;
-      width: 50vw;
       .form {
-        height: 100vh;
-        width: 50vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -112,6 +109,8 @@ body {
       flex-direction: row;
       justify-content: space-around;
       align-items: stretch;
+      background: #710193;
+      color: #fff;
       #icon {
         width: 2.5rem;
       }
