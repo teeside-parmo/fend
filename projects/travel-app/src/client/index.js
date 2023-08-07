@@ -10,9 +10,3 @@ import "./styles/style.scss";
 document.getElementById("submit").addEventListener("click", formHandler);
 
 export { formHandler, updateUi, geonamesApi, pixabayApi, weatherbitApi };
-
-// Add function to refresh page
-function reloadPage()
-{
-location.reload();
-};
